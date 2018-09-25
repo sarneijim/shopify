@@ -13,7 +13,7 @@ function search(){
     //Remove results table
     removeResultsTable();
   }else{
-    url = "https://api.github.com/search/repositories?q=user:" + owner + "&access_token=" + TOKEN;
+    url = "https://api.github.com/search/repositories?q=user:" + owner + "&access_token=" + "<?php echo TOKEN ?>";
     xhrObject.onreadystatechange = function() {
       if (xhrObject.readyState === 4) {
         if (xhrObject.status === 200 || xhrObject.status === 304) {
