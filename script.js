@@ -13,7 +13,7 @@ function search(){
     //Remove results table
     removeResultsTable();
   }else{
-    url = "https://api.github.com/search/repositories?q=user:" + owner + "&access_token=197fc4c0999d5965a0e3f02f540df7723c0cce85";
+    url = "https://api.github.com/search/repositories?q=user:" + owner + "&access_token=7d50af924c9a7ed8378b65ce79fe1038b2a9b751";
     xhrObject.onreadystatechange = function() {
       if (xhrObject.readyState === 4) {
         if (xhrObject.status === 200 || xhrObject.status === 304) {
